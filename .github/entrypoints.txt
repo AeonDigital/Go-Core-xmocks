@@ -1,0 +1,12 @@
+# ==============================================================================
+# Go Entry Points Configuration File
+# ==============================================================================
+# - If this repository is strictly a LIBRARY (no main.go), leave this file EMPTY
+#   or with comments only. The CI/CD pipeline will safely skip GoReleaser.
+#
+# - If this repository contains EXECUTABLE APPLICATIONS, list the folder paths
+#   containing your 'main.go' files (one per line).
+#   Example:
+#   ./cmd/my-api
+#   ./cmd/my-cli
+# ==============================================================================

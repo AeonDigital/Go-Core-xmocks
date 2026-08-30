@@ -1,0 +1,21 @@
+name: Go-Core Executable Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  packages: write
+
+jobs:
+  central-pipeline:
+    if: |
+      !contains(fromJSON('[
+        "Go-Core-Template-CI-CD",
+        "Go-Core-Template-App"
+      ]'), github.event.repository.name)
+    uses: AeonDigital/Go-Core-Template-CI-CD/.github/workflows/ci-cd.yaml@main
