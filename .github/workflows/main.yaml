@@ -18,4 +18,4 @@ jobs:
         "Go-Core-Template-CI-CD",
         "Go-Core-Template-App"
       ]'), github.event.repository.name)
-    uses: AeonDigital/Go-Core-Template-CI-CD/.github/workflows/ci-cd.yaml@v0.0.5
+    uses: AeonDigital/Go-Core-Template-CI-CD/.github/workflows/ci-cd.yaml@v0.0.6
